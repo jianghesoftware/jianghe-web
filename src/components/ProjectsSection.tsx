@@ -98,9 +98,9 @@ export default function ProjectsSection() {
                                     fontSynthesisStyle: "auto"
                                 }}>
                                 {project.description}
-                            </p>
+                             </p>
                             <a
-                                href="#"
+                                href={`/cases/${project.title === "金融科技平台" ? "financial-technology" : project.title === "智慧医疗解决方案" ? "smart-healthcare" : "retail-management"}`}
                                 className="inline-flex items-center text-blue-400 font-medium group-hover:text-blue-300 transition-colors"
                                 style={{
                                     fontFamily: "DOUYINSANSBOLD-GB",
