@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProjectsSection() {
     const projects = [{
@@ -130,15 +131,15 @@ export default function ProjectsSection() {
                         once: true
                     }}
                     className="text-center mt-12">
-                    <a
-                        href="#"
-                        className="inline-block border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-lg transition-all duration-300"
+                     <Link
+                        to="/cases"
+                        className="inline-block border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                         style={{
                             fontFamily: "DOUYINSANSBOLD-GB",
                             fontStyle: "italic",
                             fontSynthesisStyle: "auto"
                         }}>查看更多案例
-                                                          </a>
+                                                          </Link>
                 </motion.div>
             </div>
         </section>

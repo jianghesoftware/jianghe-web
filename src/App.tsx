@@ -10,6 +10,9 @@ import Recruitment from "@/pages/Recruitment";
 import FinancialTechnology from "@/pages/FinancialTechnology";
 import SmartHealthcare from "@/pages/SmartHealthcare";
 import RetailManagement from "@/pages/RetailManagement";
+import CompanyProfile from "@/pages/CompanyProfile";
+import AllCases from "@/pages/AllCases";
+import AllServices from "@/pages/AllServices";
 import { useState } from "react";
 import { AuthContext } from '@/contexts/authContext';
 
@@ -31,11 +34,14 @@ export default function App() {
           <Route path="/services/social-media-automation" element={<SocialMediaAutomation />} />
           <Route path="/services/lead-generation" element={<LeadGeneration />} />
         <Route path="/services/smart-hardware" element={<SmartHardware />} />
-            <Route path="/services/consultation" element={<Consultation />} />
+             <Route path="/services/consultation" element={<Consultation />} />
+            <Route path="/services" element={<AllServices />} />
             <Route path="/recruitment" element={<Recruitment />} />
             <Route path="/cases/financial-technology" element={<FinancialTechnology />} />
             <Route path="/cases/smart-healthcare" element={<SmartHealthcare />} />
             <Route path="/cases/retail-management" element={<RetailManagement />} />
+            <Route path="/company-profile" element={<CompanyProfile />} />
+            <Route path="/cases" element={<AllCases />} />
         </Routes>
     </AuthContext.Provider>
   );

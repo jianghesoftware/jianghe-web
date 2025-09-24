@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
     return (
@@ -34,7 +35,7 @@ export default function AboutSection() {
                             fontFamily: "DOUYINSANSBOLD-GB",
                             fontStyle: "italic",
                             fontSynthesisStyle: "auto"
-                        }}>一、江和软件：事情要做就做到极致好</h2>
+                        }}>一、江和软件：做事做到极致好</h2>
                     <p
                         className="text-gray-600"
                         style={{
@@ -185,21 +186,17 @@ export default function AboutSection() {
                                     }}>{value.title}</span>
                             </div>)}
                         </div>
-                        <motion.button
+        <Link
+                            to="/company-profile"
                             className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
-                            whileHover={{
-                                x: 5
-                            }}
-                            transition={{
-                                duration: 0.3
-                            }}
                             style={{
                                 fontFamily: "DOUYINSANSBOLD-GB",
                                 fontStyle: "italic",
                                 fontSynthesisStyle: "auto"
-                            }}>了解更多公司信息
-                                                                      <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </motion.button>
+                            }}>
+                            了解更多公司信息
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </Link>
                     </motion.div>
                 </div>
             </div>

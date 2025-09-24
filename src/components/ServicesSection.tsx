@@ -186,18 +186,18 @@ export default function ServicesSection() {
                     viewport={{
                         once: true
                     }}
-                    className="text-center mt-16">
-                    <a
-                        href="#"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                        style={{
-                            fontFamily: "DOUYINSANSBOLD-GB",
-                            fontStyle: "italic",
-                            fontSynthesisStyle: "auto"
-                        }}
-                    >
-                        查看全部服务
-                    </a>
+                     className="text-center mt-16">
+                        <Link
+                            to="/services"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                            style={{
+                                fontFamily: "DOUYINSANSBOLD-GB",
+                                fontStyle: "italic",
+                                fontSynthesisStyle: "auto"
+                            }}
+                        >
+                            查看全部服务
+                        </Link>
                 </motion.div>
             </div>
         </section>
