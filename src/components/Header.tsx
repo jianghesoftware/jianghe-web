@@ -47,9 +47,9 @@ export default function Header(
                 </motion.div>
                 {}
                 <nav className="hidden md:flex items-center space-x-8">
-                    {["首页", "关于我们", "服务", "案例", "联系我们"].map(item => <motion.a
+                    {["首页", "关于我们", "服务", "案例", "联系我们", "招聘"].map(item => <motion.a
                         key={item}
-                        href={`#${item === "首页" ? "" : item}`}
+                        href={item === "招聘" ? "/recruitment" : `#${item === "首页" ? "" : item}`}
                         className="text-gray-700 hover:text-blue-600 font-medium transition-colors relative group"
                         initial={{
                             opacity: 0,
@@ -61,7 +61,7 @@ export default function Header(
                         }}
                         transition={{
                             duration: 0.3,
-                            delay: 0.1 * ["首页", "关于我们", "服务", "案例", "联系我们"].indexOf(item)
+                            delay: 0.1 * ["首页", "关于我们", "服务", "案例", "联系我们", "招聘"].indexOf(item)
                         }}
                         style={{
                             fontFamily: "DOUYINSANSBOLD-GB",

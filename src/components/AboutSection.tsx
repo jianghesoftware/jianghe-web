@@ -26,7 +26,7 @@ export default function AboutSection() {
                             fontFamily: "DOUYINSANSBOLD-GB",
                             fontStyle: "italic",
                             fontSynthesisStyle: "auto"
-                        }}>关于江和
+                        }}>关于江和软件
                                                           </span>
                     <h2
                         className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
@@ -34,7 +34,7 @@ export default function AboutSection() {
                             fontFamily: "DOUYINSANSBOLD-GB",
                             fontStyle: "italic",
                             fontSynthesisStyle: "auto"
-                        }}>创新科技，驱动未来</h2>
+                        }}>一、江和软件：事情要做就做到极致好</h2>
                     <p
                         className="text-gray-600"
                         style={{
@@ -72,7 +72,7 @@ export default function AboutSection() {
                             className="absolute -top-8 -left-8 w-48 h-48 bg-indigo-100 rounded-lg -z-10"></div>
                         <div className="mt-8 grid grid-cols-2 gap-4">
                             {[{
-                                value: "50+",
+                                value: "10+",
                                 label: "专业技术人员"
                             }, {
                                 value: "30+",
@@ -82,7 +82,7 @@ export default function AboutSection() {
                                 label: "客户留存率"
                             }, {
                                 value: "10+",
-                                label: "年行业经验"
+                                label: "年软硬件行业经验"
                             }].map(
                                 (stat, index) => <div key={index} className="bg-gray-50 p-4 rounded-lg text-center">
                                     <p
@@ -132,7 +132,7 @@ export default function AboutSection() {
                                 fontFamily: "DOUYINSANSBOLD-GB",
                                 fontStyle: "italic",
                                 fontSynthesisStyle: "auto"
-                            }}>江和软件（海南）有限公司成立于2020年，是一家专注于企业数字化转型的高新技术企业。公司总部位于海南自由贸易港，依托政策优势和技术创新，为国内外企业提供全方位的数字化解决方案。
+                            }}>江和软件（海南）有限公司成立于2025年，是一家专注于企业数字化转型的高新技术企业。公司总部位于海南自由贸易港，依托政策优势和技术创新，为国内外企业提供全方位的数字化解决方案。
                                                                     </p>
                         <h3
                             className="text-2xl font-bold text-gray-900 mb-4"

@@ -6,6 +6,7 @@ import SocialMediaAutomation from "@/pages/SocialMediaAutomation";
 import LeadGeneration from "@/pages/LeadGeneration";
 import SmartHardware from "@/pages/SmartHardware";
 import Consultation from "@/pages/Consultation";
+import Recruitment from "@/pages/Recruitment";
 import { useState } from "react";
 import { AuthContext } from '@/contexts/authContext';
 
@@ -26,8 +27,9 @@ export default function App() {
           <Route path="/services/overseas-market" element={<OverseasMarket />} />
           <Route path="/services/social-media-automation" element={<SocialMediaAutomation />} />
           <Route path="/services/lead-generation" element={<LeadGeneration />} />
-          <Route path="/services/smart-hardware" element={<SmartHardware />} />
-          <Route path="/services/consultation" element={<Consultation />} />
+            <Route path="/services/smart-hardware" element={<SmartHardware />} />
+            <Route path="/services/consultation" element={<Consultation />} />
+            <Route path="/recruitment" element={<Recruitment />} />
         </Routes>
     </AuthContext.Provider>
   );

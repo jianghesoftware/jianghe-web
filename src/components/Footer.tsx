@@ -82,28 +82,40 @@ export default function Footer() {
                                         fontFamily: "DOUYINSANSBOLD-GB",
                                         fontStyle: "italic",
                                         fontSynthesisStyle: "auto"
-                                    }}>
-                                    {item}
-                                </a>
-                            </li>)}
-                        </ul>
-                    </motion.div>
-                    <motion.div
-                        initial={{
-                            opacity: 0,
-                            y: 20
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            y: 0
-                        }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.2
-                        }}
-                        viewport={{
-                            once: true
+                         }}>
+                        {item}
+                    </a>
+                </li>)}
+                <li key="招聘">
+                    <a
+                         href="/recruitment"
+                        className="text-gray-400 hover:text-white transition-colors"
+                        style={{
+                            fontFamily: "DOUYINSANSBOLD-GB",
+                            fontStyle: "italic",
+                            fontSynthesisStyle: "auto"
                         }}>
+                        招聘
+                    </a>
+                </li>
+            </ul>
+        </motion.div>
+        <motion.div
+            initial={{
+                opacity: 0,
+                y: 20
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0
+            }}
+            transition={{
+                duration: 0.5,
+                delay: 0.2
+            }}
+            viewport={{
+                once: true
+            }}>
                         <h3
                             className="text-lg font-semibold mb-4"
                             style={{
